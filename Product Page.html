@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,500&family=Rubik:ital,wght@0,700;0,900;1,400&display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+    <link rel='stylesheet'
+        href='https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css'>
+
+    <style>
+        .filterDiv {
+            /* float: left;
+            background-color: #2196F3;
+            color: #ffffff;
+            width: 100px;
+            line-height: 100px;
+            text-align: center;
+            margin: 2px; */
+            display: none;
+        }
+
+        .show {
+            display: block;
+        }
+
+        .container {
+            margin-top: 20px;
+            overflow: hidden;
+        }
+
+        /* Style the buttons */
+        .btn {
+            border: none;
+            outline: none;
+            padding: 14px 18px;
+            background-color: #ffba08;
+            cursor: pointer;
+            border-radius: 15px;
+            font-family: "Rubik", sans-serif;
+            margin: 0px 10px;
+            font-size: 20px;
+        }
+
+        .btn:hover {
+            background-color: #fff;
+            color: #222;
+        }
+
+        .btn.active {
+            background-color: #0077b6;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar Starts -->
+    <header>
+        <a href="#" class="logo"><i class="ri-home-heart-fill"></i><span>Flower <span
+                    style="color: #FF4433;font-size:30px ;">.</span></span></a>
+        <ul class="navbar">
+            <li><a href="index.html" class="">Home</a></li>
+            <li><a href="Aboutus Page.html">About Us</a></li>
+            <li><a href="Services Page.html">Services</a></li>
+            <li><a href="Product Page.html">Product</a></li>
+            <li><a href="ContactUs Page.html">Contact Us</a></li>
+        </ul>
+        <div class="main">
+            <a href="./LoginFinalPage.html" target="_blank" class="user"><i class="ri-user-fill"></i><span>Sign
+                    In</span></a>
+            <!-- <a href="Register.html">Register</a> -->
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+    <!-- Navbar Ends -->
+
+    <h2>Filter DIV Elements</h2>
+
+    <div id="myBtnContainer" style="margin-top: 100px;margin-left: 150px;">
+        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+        <button class="btn" onclick="filterSelection('cars')">Folwer</button>
+        <button class="btn" onclick="filterSelection('animals')"> Indoor Plants</button>
+        <button class="btn" onclick="filterSelection('fruits')">Chrismas Gift</button>
+        <button class="btn" onclick="filterSelection('colors')">Cake </button>
+    </div>
+
+    <div class="container">
+        <!-- product us new generated -->
+        <div class="product-aura card" style="margin-top: 100px;">
+            <div class="product-card filterDiv cars">
+                <div class="card1">
+                    <img src="images/cardimage1.webp" alt="">
+                    <h2>Flower Bouquet Kunterbunt</h2>
+                    <p>250.00RS</p>
+                </div>
+            </div>
+            <div class="product-card filterDiv cars">
+                <div class="card1">
+                    <img src="images/cardimage2.webp" alt="">
+                    <h2>Autumn Bouquet Celia Vase</h2>
+                    <p>300.00RS</p>
+                </div>
+            </div>
+            <div class="product-card filterDiv cars">
+                <div class="card1">
+                    <img src="images/cardimage3.webp" alt="">
+                    <h2>Flower Bouquet Bunter Blumen</h2>
+                    <p>350.00RS</p>
+                </div>
+            </div>
+            <div class="product-card filterDiv cars">
+                <div class="card1">
+                    <img src="images/cardimage4.webp" alt="">
+                    <h2>Rose Bouquet Sophia </h2>
+                    <p>450.00RS</p>
+                </div>
+            </div>
+        </div>
+        <div class="product-aura card">
+            <div class="product-card filterDiv cars">
+                <div class="card1">
+                    <img src="images/cardimage1.webp" alt="">
+                    <h2>Flower Bouquet Kunterbunt</h2>
+                    <p>250.00RS</p>
+                </div>
+            </div>
+            <div class="product-card filterDiv cars">
+                <div class="card1">
+                    <img src="images/cardimage2.webp" alt="">
+                    <h2>Autumn Bouquet Celia Vase</h2>
+                    <p>300.00RS</p>
+                </div>
+            </div>
+            <div class="product-card filterDiv cars">
+                <div class="card1">
+                    <img src="images/cardimage3.webp" alt="">
+                    <h2>Flower Bouquet Bunter Blum</h2>
+                    <p>350.00RS</p>
+                </div>
+            </div>
+            <div class="product-card filterDiv cars">
+                <div class="card1">
+                    <img src="images/cardimage4.webp" alt="">
+                    <h2>Rose Bouquet Sophia Vase</h2>
+                    <p>450.00RS</p>
+                </div>
+            </div>
+        </div>
+        <!-- product us new generated ended here-->
+
+        <!-- adevent & chrismas started-->
+        <div class="product-aura card">
+            <div class="product-card filterDiv  fruits">
+                <div class="card1">
+                    <img src="images/chrismas1.webp" alt="">
+                    <h2>Flower Bouquet Kunterbunt</h2>
+                    <p>250.00RS</p>
+                </div>
+            </div>
+            <div class="product-card filterDiv  fruits">
+                <div class="card1">
+                    <img src="images/chrismas2.webp" alt="">
+                    <h2>Autumn Bouquet Celia Vase</h2>
+                    <p>300.00RS</p>
+                </div>
+            </div>
+            <div class="product-card filterDiv  fruits">
+                <div class="card1">
+                    <img src="images/chrismas3.webp" alt="">
+                    <h2>Flower Bouquet Bunter Blumen</h2>
+                    <p>350.00RS</p>
+                </div>
+            </div>
+            <div class="product-card filterDiv  fruits">
+                <div class="card1">
+                    <img src="images/chrismas4.webp" alt="">
+                    <h2>Rose Bouquet Sophia </h2>
+                    <p>450.00RS</p>
+                </div>
+            </div>
+        </div>
+        <div class="product-aura card">
+            <div class="product-card filterDiv  fruits">
+                <div class="card1">
+                    <img src="images/chrismas5.webp" alt="">
+                    <h2>Flower Bouquet Kunterbunt</h2>
+                    <p>250.00RS</p>
+                </div>
+            </div>
+            <div class="product-card filterDiv  fruits">
+                <div class="card1">
+                    <img src="images/chrismas6.webp" alt="">
+                    <h2>Autumn Bouquet Celia Vase</h2>
+                    <p>300.00RS</p>
+                </div>
+            </div>
+            <div class="product-card filterDiv  fruits">
+                <div class="card1">
+                    <img src="images/chrismas7.webp" alt="">
+                    <h2>Flower Bouquet Bunter Blum</h2>
+                    <p>350.00RS</p>
+                </div>
+            </div>
+            <div class="product-card filterDiv  fruits">
+                <div class="card1">
+                    <img src="images/chrismas8.webp" alt="">
+                    <h2>Rose Bouquet Sophia Vase</h2>
+                    <p>450.00RS</p>
+                </div>
+            </div>
+        </div>
+        <!-- adevent & chrismas ended -->
+
+
+        <!-- Indoor plants started-->
+
+        <div class="product-aura card ">
+            <div class="product-card filterDiv animals">
+                <div class="card1">
+                    <img src="images/indoorplant1.webp" alt="">
+                    <h2>Orchid Arch Pink Plant</h2>
+                    <p>550.00RS</p>
+                </div>
+            </div>
+            <div class="product-card filterDiv animals">
+                <div class="card1">
+                    <img src="images/indoorplant2.webp" alt="">
+                    <h2>Dragon Tree, Peperomia Plant</h2>
+                    <p>750.00RS</p>
+                </div>
+            </div>
+            <div class="product-card filterDiv animals">
+                <div class="card1">
+                    <img src="images/indoorplant3.webp" alt="">
+                    <h2>Alocasia Zebrina XL Plant</h2>
+                    <p>400.00RS</p>
+                </div>
+            </div>
+            <div class="product-card filterDiv animals">
+                <div class="card1">
+                    <img src="images/indoorplant4.webp" alt="">
+                    <h2>Window Leaf XXL Plant</h2>
+                    <p>500.00RS</p>
+                </div>
+            </div>
+        </div>
+        <div class="product-aura card">
+            <div class="product-card filterDiv animals">
+                <div class="card1">
+                    <img src="images/indoorplant5.webp" alt="">
+                    <h2>Gold Fruit Palm XXL Plant</h2>
+                    <p>600.00RS</p>
+                </div>
+            </div>
+            <div class="product-card filterDiv animals">
+                <div class="card1">
+                    <img src="images/indoorplant6.webp" alt="">
+                    <h2>Autumn Bouquet Celia Vase</h2>
+                    <p>300.00RS</p>
+                </div>
+            </div>
+            <div class="product-card filterDiv animals">
+                <div class="card1">
+                    <img src="images/indoorplant7.webp" alt="">
+                    <h2>Golden Pothos XXL Plant</h2>
+                    <p>330.00RS</p>
+                </div>
+            </div>
+            <div class="product-card filterDiv animals">
+                <div class="card1">
+                    <img src="images/indoorplant8.webp" alt="">
+                    <h2>Air-purifying Duo Plant</h2>
+                    <p>250.00RS</p>
+                </div>
+            </div>
+        </div>
+        <!-- Indoor plants ended -->
+
+        <!-- Cake product starting -->
+        <div class="product-aura card ">
+            <div class="product-card filterDiv colors">
+                <div class="card1">
+                    <img src="images/cake1.avif" alt="">
+                    <h2>Butterscotoch Cake</h2>
+                    <p>545.00RS</p>
+                </div>
+            </div>
+            <div class="product-card filterDiv colors">
+                <div class="card1">
+                    <img src="images/cake2.avif" alt="">
+                    <h2>Rasmalai Cake</h2>
+                    <p>895.00RS</p>
+                </div>
+            </div>
+            <div class="product-card filterDiv colors">
+                <div class="card1">
+                    <img src="images/cake3.avif" alt="">
+                    <h2>Chocolate Cake</h2>
+                    <p>555.00RS</p>
+                </div>
+            </div>
+            <div class="product-card filterDiv colors">
+                <div class="card1">
+                    <img src="images/cake4.avif" alt="">
+                    <h2>Mango Cake</h2>
+                    <p>795.00RS</p>
+                </div>
+            </div>
+        </div>
+        <div class="product-aura card">
+            <div class="product-card filterDiv colors">
+                <div class="card1">
+                    <img src="images/cake5.avif" alt="">
+                    <h2>Chocolate Delight Cake</h2>
+                    <p>695.00RS</p>
+                </div>
+            </div>
+            <div class="product-card filterDiv colors">
+                <div class="card1">
+                    <img src="images/cake6.avif" alt="">
+                    <h2>Choco Coffee Indulgence Cake</h2>
+                    <p>300.00RS</p>
+                </div>
+            </div>
+            <div class="product-card filterDiv colors">
+                <div class="card1">
+                    <img src="images/cake8.avif" alt="">
+                    <h2>Fruity Vanilla Cake</h2>
+                    <p>795.00RS</p>
+                </div>
+            </div>
+            <div class="product-card filterDiv colors">
+                <div class="card1">
+                    <img src="images/cake9.avif" alt="">
+                    <h2>Black Forest Cake</h2>
+                    <p>695.00RS</p>
+                </div>
+            </div>
+        </div>
+        <!-- Cake product ending -->
+
+    </div>
+
+
+
+
+
+    <!-- footer section started-->
+    <div class="footer">
+        <div class="service">
+            <h4>Customer Service</h4>
+            <p>Our customer service hotline:
+            <p>Business hours: 9:00 - 17:00</p>
+            <p> Phone: +49 2562 - 993 72 11</p><br>
+            <a href="">Use our contact form</a>
+        </div>
+        <div class="service">
+            <h4>Flower delivery service</h4><br>
+            <a href="">All flowers</a><br><br>
+            <a href="">Flower delivery</a><br><br>
+            <a href="">Roses</a><br><br>
+            <a href="">Plants</a><br><br>
+            <a href="">Birthday flowers</a><br><br>
+        </div>
+        <div class="service">
+            <h4>Occasions</h4><br>
+            <a href="">Birthday</a><br><br>
+            <a href="">Love</a><br><br>
+            <a href="">Get Well Soon</a><br><br>
+            <a href="">Wedding</a><br><br>
+            <a href="">Thank You</a><br><br>
+        </div>
+        <div class="service">
+            <h4>Information</h4><br>
+            <a href="">About blumenshop.com</a><br><br>
+            <a href="">Delivery information</a><br><br>
+            <a href="">Freshness-promise</a><br><br>
+            <a href="">Payment methods</a><br><br>
+            <a href="">Video message</a><br><br>
+            <a href="">Send flowers anonymously</a><br><br>
+            <a href="">FAQ</a><br><br>
+        </div>
+    </div>
+    <!-- footer section ended-->
+
+    <!-- after footer social icon - payment accept -->
+    <div class="afterfooter">
+        <div class="service">
+            <p>© blumenshop.com</p><br>
+            <a href="">Company details</a><br><br>
+            <a href="">Privacy policy</a><br><br>
+            <a href="">Cookies</a><br><br>
+            <a href="">Terms and Conditions</a><br>
+        </div>
+        <div class="service">
+            <i class="ri-facebook-circle-fill"></i>
+            <i class="ri-instagram-fill"></i>
+            <i class="ri-youtube-fill"></i>
+            <i class="ri-twitter-fill"></i>
+            <i class="ri-linkedin-box-fill"></i>
+            <p class="social-link">All prices incl. VAT plus <a href=""><span>shipping costs</span></a></p>
+        </div>
+        <div class="service">
+            <img src="images/payment-1.webp" alt="">
+            <img src="images/payment-2.webp" alt="">
+            <img src="images/payment-3.webp" alt="">
+            <img src="images/payment-4.webp" alt="">
+            <p class="social-link">We Accept Payment Method</p>
+        </div>
+
+    </div>
+    <!-- after footer social icon - payment accept ended-->
+
+    <script>
+        filterSelection("all")
+        function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("filterDiv");
+            if (c == "all") c = "";
+            for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+            }
+        }
+
+        function w3AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
+            }
+        }
+
+        function w3RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+
+        // Add active class to the current button (highlight it)
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+    </script>
+    <!-- js link -->
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.3/dist/boxicons.js"></script>
+
+</body>
+
+</html>

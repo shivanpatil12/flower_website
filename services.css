@@ -1,0 +1,101 @@
+.service-banner-image {
+  width: 90%;
+  height: 700px;
+  background-color: #2d3b55;
+  border-radius: 20px;
+  margin-left: 5%;
+  display: flex;
+  flex-wrap: wrap; /*Enable wrapping to create a new row */
+  justify-content: baseline; /* Adjust the space between items */
+}
+
+.service-car-img {
+  width: 42%;
+  height: 300px;
+  background-color: #fff;
+  border-radius: 20px;
+  margin-left: 5.5%;
+  margin-top: 2%;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  display: flex;
+}
+.service-car-img img {
+  width: 350px;
+  height: 300px;
+  border-radius: 20px;
+}
+.content-card {
+  width: 42%;
+  color: #2d3b55;
+  display: flex;
+  flex-direction: column;
+}
+/* services h4 tag */
+.services_points_main {
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  text-align: left;
+  font-size: 25px;
+  color: #222327;
+  margin: 6% 0px;
+}
+/* services p tag */
+.content-card .services_points {
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  text-align: left;
+  font-size: 15px;
+  color: #a9a9a9;
+  margin: 6% 0px;
+}
+/* services p tag hover effect on p tag */
+.content-card .services_points:hover {
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  text-align: left;
+  font-size: 15px;
+  color: #2d3b55;
+  margin: 6% 0px;
+}
+
+/* banner service */
+.banner-services {
+  position: relative;
+  text-align: center;
+}
+
+.banner-services img {
+  width: 100%;
+}
+
+.banner-services .button1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 30px;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  background: #2d3b55;
+  border: 0;
+  font-size: 20px;
+  font-weight: 500;
+}
+.banner-services .button2 {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 30px;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  background: #2d3b55;
+  border: 0;
+  font-size: 20px;
+  font-weight: 500;
+}
